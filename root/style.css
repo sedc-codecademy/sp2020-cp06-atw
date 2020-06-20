@@ -7,8 +7,9 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Niconne', cursive;
   font-weight: 400;
+  background-color: #f2f2f2;
 }
 
 h1 {
@@ -37,14 +38,16 @@ h5 {
 }
 
 p {
-  font-size: 18px;
-  line-height: 2.2;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 26px;
+  line-height: 1.8;
   color: #546e7a;
 }
 
 a {
   text-decoration: none;
   line-height: 1;
+  font-size: 40px;
 }
 
 .btn {
@@ -99,14 +102,20 @@ a {
 
 /* Alignment helper */
 
-.txt-center {
-  text-align: center;
-}
+.txt-center { text-align: center; }
 .txt-uppercase {
   text-transform: uppercase;
 }
 
 /* Helpers */
+.pt-80 { padding-top: 80px; }
+.pt-50 { padding-top: 50px; }
+
+.pb-80 { padding-bottom: 80px; }
+.pb-50 { padding-bottom: 50px; }
+.pb-30 { padding-bottom: 30px; }
+
+.pl-20 { padding-left: 20px; }
 
 .mb-300 {
   margin-bottom: 300px;
@@ -114,14 +123,26 @@ a {
 .mb-100 {
   margin-bottom: 100px;
 }
-.mb-80 {
-  margin-bottom: 80px;
+.mb-80 { margin-bottom: 80px; }
+.mb-50 { margin-bottom: 50px; }
+.mb-30 { margin-bottom: 30px; }
+.mb-15 { margin-bottom: 15px; }
+
+.mt-80 { margin-top: 80px;}
+.mt-50 { margin-top: 50px; }
+.mt-30 { margin-top: 30px; }
+
+.mr-20 { margin-right: 20px; }
+
+img {
+  width: 100%;
+  height: auto;
 }
-.mb-50 {
-  margin-bottom: 50px;
-}
-.mb-30 {
-  margin-bottom: 30px;
+
+figcaption { 
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 25px;
 }
 
 /* Shadows */
@@ -135,6 +156,9 @@ a {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+
+/* Decoration helpers */
+.hover-underline:hover { text-decoration: underline; }
 
 /* Sections */
 
@@ -153,12 +177,10 @@ a {
 .txt-blue {
   color: #1a56a3;
 }
-.txt-dark-purple {
-  color: #2d2058;
-}
-.txt-dark-grey {
-  color: #263238;
-}
+.txt-dark-pink { color: #800080; }
+.txt-dark-gray { color: #808080; }
+.txt-green { color: #00b300; }
+.txt-light-white { color: #cccccc; }
 
 .bg-white {
   background-color: #fff;
@@ -172,5 +194,196 @@ a {
 .bg-light-blue-03 {
   background-color: #00aeff;
 }
+.bg-light-gray { background-color: #d9d9d9; }
+.bg-dark-gray { background-color:  #4d4d4d; }
 
-.logo { width: 14vw; }
+/*--------------------- Navigations ------------------*/
+.languages-menu {
+  display: flex;
+  flex-direction: row;  
+  
+  list-style-type: none;
+  justify-content: flex-end;
+}
+.languages-menu li img { 
+  width: 50px;
+  height: 50px;   
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+
+  list-style-type: none;
+  height: 170px;
+}
+.menu li a {
+  display: block;
+  padding: 15px 0px;
+}
+.menu li:nth-child(1) { flex-grow: 0.8; }
+.menu li:nth-child(9) { flex-grow: 0.2; }
+.menu li {
+  position: relative;
+  bottom: 50px;
+  padding-right: 10px;
+}
+
+.item a { color: black; }
+.item a:hover { 
+  color: #800080;
+  text-decoration: underline;
+}
+
+.logo { 
+  width: 14vw; 
+  padding: 7.5px 10px 7.5px 0;
+}
+
+/*--------------------- Slider ------------------*/
+.slider{
+  width: 100%;
+  height: 400px;
+}
+
+.swiper-container {
+  padding-top: 0px;
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.swiper-button-next{
+  padding-top: 0px;
+  height: 100px;
+  width: 100px;
+}
+.swiper-button-prev{
+  padding-top: 0px;
+  height: 100px;
+  width: 100px;
+}
+/*--------------------- End of Slider ------------------*/
+
+#bg-wines{
+  background-image: url("../assets/images/grapes.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*--------------------- Accordion ------------------*/
+.accordion {
+  font-weight: bold;
+  font-size: 30px;
+  
+  background-image: url("../assets/images/grapes.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active, 
+.accordion:hover {
+  opacity: 0.8;
+}
+
+/* Awards section */
+.awards-button { padding: 28px; }
+
+.panel {
+  padding: 0 24px;  
+  background-color: #d9d9d9;
+  display: none;
+  overflow: hidden;
+}
+.panel p {
+  font-size: 24px;
+  line-height: 1.5;
+}
+.panel p a { font-size: 24px; }
+
+/* Wines images */
+#wines-imgs { 
+  text-align: center; 
+  font-size: 0;
+}
+#wines-imgs a { font-size: 0; }
+#wines-imgs a img{
+  width: 350px;
+  height: 300px;
+}
+#wines-imgs a:nth-child(1) img { width: 550px;}
+#wines-imgs a:nth-child(2) img { width: 500px;}
+
+/* Contact form */
+.fa { color:#000; }
+
+.contact-details p { 
+  font-size: 18px;
+  color: #fff;
+}
+.contact-details p span {
+  padding-left: 20px;
+  color: wheat;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+::placeholder { color: #cccccc; }
+
+.contact-form form input:nth-child(1),
+.contact-form form input:nth-child(2){
+  padding: 15px;
+  background-color: #595959;
+  color: #fff;
+
+  border: 1px solid #000;
+  outline: none;
+}
+.contact-form form textarea {
+  padding: 15px 250px 100px 15px;
+  background-color: #595959;
+  color: #fff;
+
+  border: 1px solid #000;
+  outline: none;  
+}
+.contact-form form input:nth-child(4) {
+  padding: 15px 40px;
+  color: #fff;
+  background-color: #009999;
+  cursor: pointer;
+  border-radius: 5%;
+  border: none;
+}
+.contact-form form input:nth-child(4):focus,
+.contact-form form input:nth-child(4):active {
+  border: none;
+  outline: none;
+}
+.contact-form form input:nth-child(4):hover { opacity: 0.8; }
+
+i:hover { opacity: 0.5; }
+
+.nav-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style-type: none;  
+}
+.nav-footer li a {
+  display: block;
+  padding: 10px 0px;
+}
+.nav-footer li:nth-child(1),
+.nav-footer li:nth-child(4) { flex-grow: 0.44; }

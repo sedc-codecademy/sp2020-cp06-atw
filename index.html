@@ -1,110 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!---------------------- Meta Tags ----------------------------->
     <meta charset="UTF-8">
-    <meta name="description"                    content="">
-    <meta name="apple-mobile-web-app-capable"   content="yes">
-    <meta name="viewport"                       content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta http-equiv="Content-Type"             content="text/html; charset=utf-8">
+    <meta name="description" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-    <meta property="og:title"       content="">
-    <meta property="og:site_name"   content="">
-    <meta property="og:type"        content="website">
+    <meta property="og:title" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:type" content="website">
     <meta property="og:description" content="">
-    
+
     <!---------------------- Css and Fonts ----------------------------->
-    <link rel="stylesheet" href="assets/css/bootstrap-4.4-grid/grid.min.css">
+    <link rel="stylesheet" href="assets/bootstrap-4.5/grid.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="root/style.css">
-    <script src="https://kit.fontawesome.com/99138e9a0b.js" crossorigin="anonymous"></script>
-    
-    <title></title>
+    <title>Home | Tikves</title>
 </head>
 
 
 <body>
     <header>
         <div class="container">
-            <div class="d-flex flex-wrap align-items-center">
-                <div class="col-md-2">
-                    <a href="#"><img class="img-fluid logo" src="assets/icons/logoMK.png"></a>
-                </div>
-                <div class="col-md-10">
-                    <nav>
-                        <ul class="main-navigation">
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                        </ul>
-                    </nav>
-                </div>
+            <div class="col-md-12">
+                <nav>
+                    <ul class="languages-menu">
+                        <li class="item"><a href="#"><img src="assets/icons/flagMK.png" /></a></li>
+                        <li class="item"><a href="#"><img src="assets/icons/flagEN.png" /></a></li>
+                        <li class="item"><a href="#"><img src="assets/icons/flagRS.png" /></a></li>
+                    </ul>
+                </nav>
+
+                <nav>
+                    <ul class="menu">
+                        <li class="item"></li>
+                        <li class="item"><a href="#">About</a></li>
+                        <li class="item"><a href="#">Wines</a></li>
+                        <li class="item"><a href="#">Events</a></li>
+                        <li class="logo">
+                            <a href="#"><img class="img-fluid logo" src="assets/icons/logoMK.png"></a>
+                        </li>
+                        <li class="item"><a href="#">Awards</a></li>
+                        <li class="item"><a href="#">Gallery</a></li>
+                        <li class="item"><a href="#">Supporters</a></li>
+                        <li class="item"></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header> <!--------------- End Header ---------------->
 
+    <div class="slider">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <img class="swiper-slide" src="assets/images/wineGlass2.jpg" alt="Wine glass" />
+                <img class="swiper-slide" src="assets/images/grapes.jpg" alt="Grapes" />
+                <img class="swiper-slide" src="assets/images/rWInes.jpg" alt="Wines" />
+                <img class="swiper-slide" src="assets/images/wineGlass3.jpg" alt="Wine glass" />
+            </div>
 
+            <div class="swiper-pagination"></div>
+            <img src="assets/images/arrow-right.png" class="swiper-button-next" />
+            <img src="assets/images/arrow-left.png" class="swiper-button-prev" />
+        </div>
+    </div> <!-------------- END Slider ---------->
 
-    
-    <section id="">
+    <section id="wines" class="pt-50 pb-50 bg-light-gray">
         <div class="container">
-            <div class="bg-gray box-shadow">
-                <div class="d-flex flex-wrap align-items-center">
-                    <div class="col-md-6 text-center">
-                        <h1></h1>
-                    </div>
+            <div class="d-flex flex-wrap align-items-center">
+                
+                <div class="col-md-12 text-center">
+                    <h1 class="txt-center txt-dark-gray">Our products</h1>
+                    <h2 class="txt-center mb-80">Here you can see a list of our wines!</h2>
+                    <h1 class="txt-center txt-dark-pink"><a href="#" class="hover-underline">View all Wines</a></h1>
+                </div>
 
-                    <div class="col-md-6">
+                <div class="col-md-4">
+                    <figure>
+                        <a href="#"><img src="assets/images/rWInes.jpg" /></a>
+                        <figcaption>Trius Cabernet France 2011</figcaption>
+                        <figcaption class="txt-green">$629.00</figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4">
+                    <figure>
+                        <a href="#"><img src="assets/images/wineGlass3.jpg" /></a>
+                        <figcaption>Trius Cabernet France 2011</figcaption>
+                        <figcaption class="txt-green">$629.00</figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4">
+                    <figure>
+                        <a href="#"><img src="assets/images/rWInes.jpg" /></a>
+                        <figcaption>Trius Cabernet France 2011</figcaption>
+                        <figcaption class="txt-green">$629.00</figcaption>
+                    </figure>
+                </div>
+
+            </div>
+        </div>
+    </section><!--------------- End wines Section ---------------->
+
+    <section id="bg-wines" class="pb-50">
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </section><!--------------- End background wines Section ---------------->
+
+
+    <section class="pt-50">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center">
+               
+                <div class="col-md-6">
+                    <h1 class="mb-50">Our story</h1>
+                    <p class="mb-30">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. In praesentium enim tempora magnam
+                        voluptatum aspernatur deleniti autem,
+                        ipsam et consectetur atque adipisci repellendus culpa sunt rerum odit numquam officiis
+                        recusandae.
+                    </p>
+                    <a href="#" class="hover-underline">Learn more About us</a>
+                </div>
+               
+                <div class="col-md-6">
+                    <img src="assets/images/rWInes.jpg" />
+                </div>
+            
+            </div>
+        </div>
+    </section> <!--------------- End "Our story" Section ---------------->
+
+    <section class="awards mt-80 pt-80 pb-80 bg-light-gray">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center">
+
+                <div class="col-md-6">
+                    <button class="accordion mb-15 txt-dark-pink awards-button">International Winery Award 2020</button>
+                    <div class="panel">
                         <p>
-                            <!-- text --> 
-                            <p><br>
-                                <!-- text -->
-                                <br />
-                                <!-- text -->
-                            </p>
-
-                            <p><br>
-                                <!-- text -->
-                            </p>
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                            squid.<a href="#" class="txt-dark-pink hover-underline pl-20">More info</a>
                         </p>
                     </div>
 
+                    <button class="accordion mb-15 txt-dark-pink awards-button">International Winery Award 2020</button>
+                    <div class="panel">
+                        <p>
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                            squid.<a href="#" class="txt-dark-pink hover-underline pl-20">More info</a>
+                        </p><br />
+                    </div>
+
+                    <button class="accordion txt-dark-pink awards-button">International Winery Award 2020</button>
+                    <div class="panel">
+                        <p>
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                            squid. <a href="#" class="txt-dark-pink hover-underline pl-20">More info</a>
+                        </p>
+                    </div>
                 </div>
+
+                <div class="col-md-6">
+                    <h1 class="mb-50">Awards</h1>
+                    <p class="mb-30">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. In praesentium enim tempora magnam
+                        voluptatum aspernatur deleniti autem,
+                        ipsam et consectetur atque adipisci repellendus culpa sunt rerum odit numquam officiis
+                        recusandae.
+                    </p>
+                    <a href="#" class="hover-underline">See all Awards</a>
+                </div>
+
             </div>
         </div>
-    </section><!--------------- End  Section ---------------->
+    </section> <!--------------- End Awards Section ---------------->
 
+    <section id="wines-imgs" class="mt-50">
+        <a href="#"><img src="assets/images/grapes.jpg" /></a>
+        <a href="#"><img src="assets/images/rWInes.jpg" /></a>
+        <a href="#"><img src="assets/images/wineGlass2.jpg" /></a>
 
+        <a href="#"><img src="assets/images/wineGlass3.jpg" /></a>
+        <a href="#"><img src="assets/images/grapes.jpg" /></a>
+    </section> <!--------------- End Wines images Section ---------------->
 
-    <footer id="">
-        <div class="bg-black box-shadow">            
-            <div class="container">
-                <div class="d-flex flex-wrap align-items-center">
-                    <div class="col-md-12">
-                        <h3 class="text-white text-center"></h3>
-                    </div>
+    <footer class="mt-50 pt-80 bg-dark-gray">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center">
 
-                    <div class="col-lg-4 col-md-4">
-                        <h3 class="text-white"></h3>
-                    </div>
+                <div class="col-md-6 contact-details">
+                    <h1 class="pb-50 txt-white">Contact Details</h1>
+                    <p>
+                        <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+                        <span>Address:</span> St.Solunska bb, Strumica, Macedonia
+                    </p>
+                    <p>
+                        <a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                        <span>Phone:</span> +389 88 888 888
+                    </p>
+                    <p>
+                        <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                        <span>Email:</span> vinarija@yahoo.com.mk
+                    </p>
+                </div>
 
-                    <div class="col-lg-8 col-md-8 text-left">
-                        <nav>
-                            <ul>
-                                <li><a href="" target="_blank">
-                                    <i class="fab fa-facebook-f"></i></a>
-                                </li>
-                                <li><a href="mailto: " target="_blank">
-                                    <i class="fas fa-envelope"></i></a></li>
-                            </ul>
-                        </nav>
-                    </div>
+                <div class="col-md-6 contact-form">
+                    <h1 class="pb-30 txt-white">Contact Us</h1>
 
-                </div><br /><br />
+                    <form method="POST">
+                        <input type="text" placeholder="Name" class="mr-20" />
+                        <input type="text" placeholder="Email" />
+                        <textarea class="mt-30" placeholder="Message..."></textarea>
+                        <input type="submit" value="Send" class="mt-30" />
+                    </form>
+                </div>
+
+                <div class="col-md-12 mt-80">
+                    <ul class="nav-footer">
+                        <li class="item"></li>
+                        <li>
+                            <a href="" target="_blank">
+                                <i class="fab fa-facebook-f txt-light-white"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto: " target="_blank">
+                                <i class="fas fa-envelope txt-light-white"></i>
+                            </a>
+                        </li>
+                        <li class="item"></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-12 txt-center mt-30">
+                    <p class="txt-light-white" id="copyright">Copyright &copy; Tikves Wineries, </p>
+                </div>
+
             </div>
         </div>
-    </footer><!--------------- End Footer ---------------->
+    </footer> <!--------------- End of Footer ---------------->
 
+    
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://kit.fontawesome.com/99138e9a0b.js" crossorigin="anonymous"></script>
     <script src="root/script.js"></script>
 </body>
 </html>
