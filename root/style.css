@@ -177,6 +177,7 @@ figcaption {
 .txt-blue {
   color: #1a56a3;
 }
+.txt-light-pink { color: #ffc0cb }
 .txt-dark-pink { color: #800080; }
 .txt-dark-gray { color: #808080; }
 .txt-green { color: #00b300; }
@@ -278,9 +279,10 @@ figcaption {
   font-weight: bold;
   font-size: 30px;
   
-  background-image: url("../assets/images/grapes.jpg");
+  background-image: url("../assets/images/wines.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 
   cursor: pointer;
   padding: 18px;
